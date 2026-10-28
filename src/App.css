@@ -1,0 +1,7 @@
+.linha-gasto {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  background-color: gray;
+  padding: 10px;
+}
