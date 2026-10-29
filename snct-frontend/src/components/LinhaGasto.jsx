@@ -1,9 +1,12 @@
-export default function LinhaGasto({ despesa, gasto, data }) {
+export default function LinhaGasto({ nome, valor, data, fnExclusao }) {
   return (
     <div className="linha-gasto">
-      <span>Despesa: {despesa}</span>
-      <span>Gasto: {gasto}</span>
+      <span>Nome: {nome}</span>
+      <span>Valor: {valor}</span>
       <span>Data: {data}</span>
+      <button className="botao-excluir" onClick={fnExclusao}>
+        Excluir
+      </button>
     </div>
   );
 }
