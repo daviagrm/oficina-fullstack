@@ -6,6 +6,17 @@
   padding: 10px;
 }
 
+.acoes-linha {
+  display: flex;
+  gap: 8px;
+}
+
+.botao-editar {
+  background-color: #4f7cff;
+  color: white;
+  padding: 5px;
+}
+
 .botao-excluir {
   background-color: red;
   color: white;
@@ -49,4 +60,18 @@
 
 .botao-cadastrar:hover {
   background-color: #3a64e0;
+}
+
+.botao-cancelar {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #ccc;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botao-cancelar:hover {
+  background-color: #b3b3b3;
 }

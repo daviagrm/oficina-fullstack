@@ -32,3 +32,17 @@ export const deletarDespesa = async (id) => {
     console.error("Erro ao excluir despesa: ", error);
  }
 }
+
+export const editarDespesa = async (id, nome, data, valor) => {
+ try {
+    const response = await axios.put(`http://localhost:8000/gasto/${id}`, {
+        "nome": nome,
+        "data": data,
+        "valor": valor
+    });
+    console.log("Despesa editada com sucesso:", response.data);
+    return response.data;
+ } catch (error) {
+    console.error("Erro ao editar despesa:", error);
+ }
+}
